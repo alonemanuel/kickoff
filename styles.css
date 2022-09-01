@@ -10,6 +10,16 @@ body {
   font-family: 'IBM Plex Sans', sans-serif, serif;
 }
 
+div.pitch_img {
+  height: 100px;
+  width: 100px;
+  border-width: 2px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+
+}
+
 img {
   height: auto;
   width: 200px;
