@@ -10,14 +10,18 @@ body {
   font-family: 'IBM Plex Sans', sans-serif, serif;
 }
 
-div.pitch_img {
+.pitch_item .pitch_img {
   height: 100px;
   width: 100px;
   border-width: 2px;
-  border-color: black;
+  border-color: white;
   border-style: solid;
   border-radius: 8px;
+  /* flex: 3; */
+}
 
+.pitch_item p{
+  flex: 1;
 }
 
 img {
@@ -34,6 +38,23 @@ header {
   background: darkblue;
   color: white;
   height: 75px;
+  padding: 1em;
+  display: flex;
+  flex-direction: row;
+}
+
+header div{
+  flex: 1;
+  color: white;
+}
+
+header div a{
+  color: white;
+  text-decoration-line: none;
+}
+
+header #title{
+  flex: 5;
 }
 
 main {
@@ -42,16 +63,28 @@ main {
 footer {
   background-color: darkblue;
   color: aliceblue;
-  height: 25px;
+  /* height: 25px; */
+  padding:1em;
+  /* align-items: center; */
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  align-items: center;
 }
 
 .pitch_list{
   display: flex;
   flex-direction: row;
+  flex: 3;
 }
 
 .pitch_item{
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: ; */
+
 }
 
 #football_img{
@@ -64,3 +97,39 @@ footer {
 h1{
   display: inline;
 }
+
+button{
+  color: white;
+  background-color: #3882f6;
+  border-width: 0px;
+  border-radius: 5px;
+  padding-inline: 1em;
+  padding-block: 0.5em;
+  height: 30px;
+  width: auto;
+  font-weight: bold;
+}
+
+.signup_section{
+  margin: 4em;
+}
+
+.pitches_view{
+  padding: 2em;
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* flex: 3; */
+  /* align-items: center; */
+}
+
+.pitches_view h2{
+  flex: 1;
+}
+
+.quote,
+.bottom_signup{
+  margin: 4em;
+}
+
