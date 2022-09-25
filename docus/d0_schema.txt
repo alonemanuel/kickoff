@@ -1,0 +1,29 @@
+Players
+    id
+    first_name
+    last_name
+    phone_number
+    preferred_positions
+    level
+    age
+    bio
+
+Pitches
+    id
+    name
+    has_lights
+    turf_type
+    num_players_a_side
+    city
+    address
+
+Games
+    id
+    name
+    start_time
+    duration
+    pitch
+    organizer_id
+    participants
+    waiting_list
+
